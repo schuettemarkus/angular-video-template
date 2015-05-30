@@ -1,0 +1,120 @@
+@import url(http://fonts.googleapis.com/css?family=Poiret+One|Bangers|Open+Sans:400,700);
+* {
+  transition: all 0.5s ease; }
+
+body {
+  background-color: #d3d3d3; }
+
+html, h1, h2, h3, h4, h5, h6, p, a, li {
+  font-family: "Open Sans"; }
+
+.name a {
+  font-family: "Poiret One";
+  font-size: 28px; }
+  @media (min-width: 64.063em) {
+    .name a {
+      padding-left: 0 !important; } }
+
+.top-bar-section li a {
+  padding: 0 4px !important; }
+.top-bar-section .social-info {
+  color: white;
+  margin-top: 10px;
+  font-family: "Poiret One";
+  padding: 0 10px; }
+.top-bar-section i {
+  font-size: 28px;
+  padding-top: 8px; }
+.top-bar-section .facebook-square i:hover {
+  color: blue; }
+.top-bar-section .twitter-square:hover {
+  color: red; }
+
+.item {
+  padding: 10px 10px 0 10px; }
+
+.vid-container {
+  width: auto; }
+  .vid-container .video {
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    background-color: tomato; }
+    .vid-container .video .video-header h2 {
+      padding: 10px 0;
+      color: white;
+      text-align: center;
+      font-size: 28px; }
+      .vid-container .video .video-header h2 span {
+        font-weight: bold; }
+    .vid-container .video .mobile-info {
+      background-color: white;
+      position: relative;
+      top: 98px;
+      height: 35px;
+      width: 45%;
+      float: right;
+      border-radius: 25px 0 0 0; }
+      .vid-container .video .mobile-info p {
+        padding: 5px;
+        text-align: center; }
+      .vid-container .video .mobile-info:hover {
+        width: 100%;
+        border-radius: 0;
+        cursor: pointer; }
+        .vid-container .video .mobile-info:hover p {
+          font-weight: bold; }
+    .vid-container .video .play-icon img {
+      width: 50px;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -22px;
+      margin-left: -22px; }
+      .vid-container .video .play-icon img:hover {
+        opacity: .5; }
+      @media (min-width: 40.063em) {
+        .vid-container .video .play-icon img {
+          width: 80px;
+          top: 35%;
+          left: 44%; } }
+    .vid-container .video:hover {
+      cursor: pointer; }
+  .vid-container .info {
+    display: none;
+    font-family: "Poiret One";
+    background-color: #333;
+    height: auto;
+    color: white;
+    text-align: center; }
+    .vid-container .info p {
+      margin-bottom: 0;
+      padding: 5px 0; }
+    .vid-container .info .video-title {
+      font-size: 28px; }
+    @media (min-width: 40.063em) {
+      .vid-container .info {
+        display: block; } }
+  .vid-container .one {
+    background-image: url("../images/snowboard.jpg"); }
+  .vid-container .two {
+    background-image: url("../images/snowboard-2.jpg"); }
+  .vid-container .three {
+    background-image: url("../images/snowboard-3.jpg"); }
+  .vid-container .four {
+    background-image: url("../images/snowboard-4.jpg"); }
+  .vid-container .five {
+    background-image: url("../images/snowboard-5.jpg"); }
+  .vid-container .six {
+    background-image: url("../images/snowboard-6.jpg"); }
+
+.footer p {
+  font-size: 10px;
+  color: #999;
+  text-align: center; }
+  @media (min-width: 64.063em) {
+    .footer p {
+      text-align: left; } }
+
+/*# sourceMappingURL=custom.css.map */
