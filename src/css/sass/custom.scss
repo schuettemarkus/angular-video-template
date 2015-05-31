@@ -2,6 +2,10 @@
 
 //Colors
 $primary: #333;
+$fb-blue: #3b5998;
+$twitter-blue: #00aced;
+$youtube-red: #bb0000;
+$instagram-blue: #517fa4;
 
 *{
     transition: all 0.5s ease;
@@ -22,27 +26,8 @@ html, h1, h2, h3, h4, h5, h6, p, a, li{
     }
 }
 .top-bar-section{
-    li{
-        a{
-            padding: 0 4px !important; 
-        }
-    }
-    .social-info{
-        color: white;
-        margin-top: 10px;
-        font-family: "Poiret One";
-        padding: 0 10px;
-    }
-    i{
-        font-size: 28px;
-        padding-top: 8px;
-        
-    }
-   .facebook-square i:hover{
-         color: blue;
-    }
-    .twitter-square:hover{
-     color: red;   
+    input{
+        box-sizing: inherit;   
     }
 }
 .item{
@@ -76,6 +61,7 @@ html, h1, h2, h3, h4, h5, h6, p, a, li{
             float: right;
             border-radius: 25px 0 0 0;
             p{
+                font-size: 12px;
                 padding: 5px;
                 text-align: center;
             }
@@ -157,9 +143,48 @@ html, h1, h2, h3, h4, h5, h6, p, a, li{
     p{
         font-size: 10px;
         color: #999;
-        text-align: center;
         @media (min-width: 64.063em){
             text-align: left;   
+        }
+    }
+    ul{
+        list-style-type: none;
+        li{
+            display: inline-block;
+            margin: 0;
+        }
+    }
+    .social-info{
+        display: none;
+        color: white;
+        font-family: "Poiret One";
+        padding: 0 10px;
+        @media (min-width: 40.063em){
+            display: inline-block;
+        }
+    }
+    i{
+        font-size: 28px;
+        color: white;
+    }
+    .fa-facebook-square{
+        &:hover{
+            color: $fb-blue;
+        }
+    }
+    .fa-twitter-square{
+        &:hover{
+            color: $twitter-blue;
+        }
+    }
+    .fa-instagram{
+        &:hover{
+            color: $instagram-blue;
+        }
+    }
+    .fa-youtube-square{
+        &:hover{
+            color: $youtube-red;
         }
     }
 }
