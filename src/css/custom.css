@@ -73,7 +73,8 @@ html, h1, h2, h3, h4, h5, h6, p, a, li {
       margin-top: -22px;
       margin-left: -22px; }
       .vid-container .video .play-icon img:hover {
-        opacity: .5; }
+        padding: 2px;
+        transition: .2s; }
       @media (min-width: 40.063em) {
         .vid-container .video .play-icon img {
           width: 80px;
@@ -92,7 +93,9 @@ html, h1, h2, h3, h4, h5, h6, p, a, li {
       margin-bottom: 0;
       padding: 5px 0; }
     .vid-container .info .video-title {
-      font-size: 28px; }
+      font-size: 24px; }
+    .vid-container .info .video-info {
+      background-color: #262626; }
     @media (min-width: 40.063em) {
       .vid-container .info {
         display: block; } }
