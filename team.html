@@ -14,13 +14,13 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
         <title>Custom Template</title>
     </head>
-    <body ng-app="custom-template" ng-controller="vidController as video">
+    <body class="team" ng-app="custom-template" ng-controller="teamController as team">
         <!-- Nav -->
         <div id="nav" class="fixed contain-to-grid">
             <nav class="top-bar" data-topbar role="navigation">
               <ul class="title-area">
                 <li class="name">
-                  <h1><a href="#">CUSTOM</a></h1>
+                  <h1><a href="custom.html">CUSTOM</a></h1>
                 </li>
                 <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
               </ul>
@@ -44,24 +44,15 @@
         <div id="content">
             <!-- Video Cards -->
             <div class="row">
-                <div class="small-12 medium-6 large-4 columns item" ng-repeat="card in video.cards | filter:searchText">
+                <div class="small-12 medium-6 large-4 columns item" ng-repeat="person in team.person | filter:searchText">
                     <div class="vid-container">
-                        <a href="watch.html">
-                            <div class="video one">
-                                <div class="video-header">
-                                    <h2>{{card.name}}</h2>
-                                </div>
-                                <div class="play-icon">
-                                    <img src="src/images/play-icon.png" alt="play">
-                                </div>
-                                <div class="mobile-info hide-for-medium-up">
-                                    <p>{{card.location}}</p>
-                                </div>
-                            </div>
-                        </a>
+                        <div class="video one">
+                            
+                        </div>
                         <div class="info">
-                            <p class="video-title">{{card.title}}</p>
-                            <p class="video-info">{{card.location}} - {{card.date}}</p>
+                            <p class="person-name">{{person.name}}</p>
+                            <p class="person-info">{{person.age}} - {{person.location}}</p>
+                            <p class="person-bio">{{person.bio}}</p>
                         </div>
                     </div>
                 </div>

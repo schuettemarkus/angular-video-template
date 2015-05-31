@@ -14,13 +14,13 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
         <title>Custom Template</title>
     </head>
-    <body ng-app="custom-template" ng-controller="vidController as video">
+    <body class="watch" ng-app="custom-template" ng-controller="vidController as video">
         <!-- Nav -->
         <div id="nav" class="fixed contain-to-grid">
             <nav class="top-bar" data-topbar role="navigation">
               <ul class="title-area">
                 <li class="name">
-                  <h1><a href="#">CUSTOM</a></h1>
+                  <h1><a href="custom.html">CUSTOM</a></h1>
                 </li>
                 <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
               </ul>
@@ -28,8 +28,10 @@
               <section class="top-bar-section">
                 <!-- Right Nav Section -->
                 <ul class="right">
+                    <!--
                     <li><i class="fa fa-search"></i></li>
                     <li><input type="search" ng-model='searchText' placeholder="search here" style="vertical-align:middle"></li>
+                    -->
                 </ul>
 
                 <!-- Left Nav Section -->
@@ -42,26 +44,26 @@
             <!-- Nav End -->
         </div>
         <div id="content">
+            <div class="row watch-info">
+                <div class="small-12 columns">
+                    <h2>{{card.name}}</h2>
+                </div>
+                <div class="small-12 columns">
+                    <p>{{card.location}} - {{card.date}}</p>
+                </div>
+            </div>
             <!-- Video Cards -->
             <div class="row">
-                <div class="small-12 medium-6 large-4 columns item" ng-repeat="card in video.cards | filter:searchText">
+                <div class="small-12 medium-offset-1 medium-10 medium-offset-1 large-12 large-offset-0 columns item">
                     <div class="vid-container">
-                        <a href="watch.html">
-                            <div class="video one">
-                                <div class="video-header">
-                                    <h2>{{card.name}}</h2>
-                                </div>
-                                <div class="play-icon">
-                                    <img src="src/images/play-icon.png" alt="play">
-                                </div>
-                                <div class="mobile-info hide-for-medium-up">
-                                    <p>{{card.location}}</p>
-                                </div>
+                        <div class="video">
+                            <div class="flex-video">
+                                <iframe src="https://player.vimeo.com/video/128737534?color=ffffff" width="500" height="213" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                             </div>
-                        </a>
+                        </div>
                         <div class="info">
-                            <p class="video-title">{{card.title}}</p>
-                            <p class="video-info">{{card.location}} - {{card.date}}</p>
+                            <h2>{{card.title}}</h2>
+                            <p>{{card.description}}</p>
                         </div>
                     </div>
                 </div>
